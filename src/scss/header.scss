@@ -1,0 +1,34 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background-color: #fff;
+  // .header__container
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: toRem(75);
+  }
+  // .header__logo
+  &__logo {
+    z-index: 2;
+  }
+  // .header__menu
+  &__menu {
+    margin-left: auto;
+  }
+}
+.menu {
+  // .menu__buttons
+  &__buttons {
+    font-size: toRem(0);
+    display: flex;
+    gap: toRem(12);
+    @media (max-width: $mobile) {
+      flex-direction: column;
+		}
+  }
+  // .menu__button
+  &__button {
+  }
+}

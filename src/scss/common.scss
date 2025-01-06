@@ -1,0 +1,31 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.button {
+  background-color: $buttonColor;
+  border-radius: toRem(8);
+  padding-block: toRem(11.5);
+  padding-inline: toRem(20);
+  font-size: toRem(16);
+  font-weight: 700;
+  color: #fff;
+  line-height: 150%; /* 24/16 */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  img{
+    margin-right: toRem(5);
+  }
+  @media (any-hover: hover){
+    &:hover{
+      background-color: $buttonColorHover;
+    }
+  }
+  &--white{
+    background-color: $buttonWhite;
+    color: $mainColor;
+    @media (any-hover: hover){
+      &:hover{
+        background-color: #d3d2d2;
+      }
+    }
+  }
+}
