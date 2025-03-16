@@ -26,6 +26,7 @@
     gap: toRem(12);
     @media (max-width: $mobile) {
       flex-direction: column;
+      align-items: center;
 		}
   }
   // .menu__button
